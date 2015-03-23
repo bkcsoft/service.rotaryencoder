@@ -76,7 +76,7 @@ if __name__ == '__main__':
 	
 	pi = pigpio.pi()
 	decoder = decoder(pi, 9, 11, callback);
-	while:
+	while 1:
 		time.sleep(1)
 	decoder.cancel()
 	pi.stop()
