@@ -75,7 +75,8 @@ if __name__ == '__main__':
 		else:
 			xbmc.executebuiltin('Action(VolumeUp)');
 
-	
+
+	time.sleep(10)
 	pi = pigpio.pi()
 	decoder = decoder(pi, 11, 9, callback);
 	while 1:
