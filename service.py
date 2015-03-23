@@ -78,7 +78,10 @@ if __name__ == '__main__':
 
 	while system('pidof pigpiod') != 0:
 		time.sleep(1)
+
+	time.sleep(1)
 	pi = pigpio.pi()
+	
 	decoder = decoder(pi, 11, 9, callback);
 	while 1:
 		time.sleep(1)
