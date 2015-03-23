@@ -70,9 +70,9 @@ class decoder:
 if __name__ == '__main__':
 	def callback(way):
 		if way > 0:
-			xbmc.executebuiltin('Action(VolumeDown)');
-		else:
 			xbmc.executebuiltin('Action(VolumeUp)');
+		else:
+			xbmc.executebuiltin('Action(VolumeDown)');
 	
 	pi = pigpio.pi()
 	decoder = decoder(pi, 9, 11, callback);
