@@ -1,6 +1,7 @@
 import xbmc
 import pigpio
 import time
+from os import system
 
 class decoder:
 
